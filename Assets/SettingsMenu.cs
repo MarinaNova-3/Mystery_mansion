@@ -18,7 +18,6 @@ public class SettingsMenu : MonoBehaviour
         languageDropdown.options.Clear();
         languageDropdown.options.Add(new Dropdown.OptionData("English"));
         languageDropdown.options.Add(new Dropdown.OptionData("Greek"));
-         // Add more languages as needed
 
         // Load saved language preference
         languageDropdown.value = PlayerPrefs.GetInt("Language", 0);
@@ -53,7 +52,7 @@ public class SettingsMenu : MonoBehaviour
 
     void BackToMainMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
     }
 
     void OnDestroy()
